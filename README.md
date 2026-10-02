@@ -1,15 +1,15 @@
 # 🧬 LocalMock AI — Privacy-Safe Mock Data Generator
 
-> **Built at Hacktoberfest Hack Day Bhopal x BuilderBase | Major League Hacking**  
-> *Best Open-Source AI Project Challenge*
+> Built at Hacktoberfest Hack Day Bhopal x BuilderBase | Major League Hacking
+> Best Open-Source AI Project Challenge
 
 ---
 
 ## 🔥 The Problem
 
-Every developer needs **fake/mock data** to test their applications.
+Every developer needs fake/mock data to test their applications.
 
-But using ChatGPT means uploading your **private database schema** to a cloud server — violating NDAs and data privacy policies.
+But using ChatGPT means uploading your private database schema to a cloud server — violating NDAs and data privacy policies.
 
 **LocalMock AI fixes this.**
 
@@ -17,9 +17,9 @@ But using ChatGPT means uploading your **private database schema** to a cloud se
 
 ## ✅ The Solution
 
-Describe your dataset in plain English → Get realistic **JSON, CSV, or SQL** data generated **100% offline** using an open-weight AI model running on YOUR machine.
+Describe your dataset in plain English → Get realistic JSON, CSV, or SQL data generated 100% offline using an open-weight AI model running on YOUR machine.
 
-> 🔒 Your schema never leaves your laptop. Ever.
+🔒 Your schema never leaves your laptop. Ever.
 
 ---
 
@@ -74,5 +74,38 @@ Describe your dataset in plain English → Get realistic **JSON, CSV, or SQL** d
 ## ⚙️ How to Run
 
 ### 1 — Pull the open-weight model
-```bash
 ollama run tinyllama
+
+### 2 — Install dependencies
+pip install streamlit openai pandas
+
+### 3 — Run the app
+python -m streamlit run app.py
+
+### 4 — Open browser
+http://localhost:8501
+
+---
+
+## 🔮 Future Roadmap
+
+- [ ] XML, YAML, Excel output formats
+- [ ] Upload your existing table schema file
+- [ ] Relationship-aware data with foreign keys
+- [ ] Docker one-command setup
+
+---
+
+## 🏆 Hackathon
+
+| Field | Value |
+|---|---|
+| Event | Hacktoberfest Hack Day Bhopal x BuilderBase |
+| Organizer | Major League Hacking (MLH) |
+| Challenge | Best Open-Source AI Project |
+| Model | TinyLlama (Apache 2.0) |
+| License | MIT ✅ |
+
+---
+
+"The best privacy tool is one that never sends your data anywhere in the first place."
